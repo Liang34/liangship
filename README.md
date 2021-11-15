@@ -44,3 +44,12 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+样式解决方案分析
+Inline CSS
+CSS in JS
+style Component
+Sass/Less
+创建自己组件库的色彩体系
+系统色板-基础色板+中性色板
+
+组件库样式变量分类
