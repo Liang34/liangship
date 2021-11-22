@@ -8,13 +8,13 @@ function App() {
   return (
     <div className="App">
       <Menu defaultIndex={0}>
-        <MenuItem>
+        <MenuItem index={0}>
           cool Link
         </MenuItem>
-        <MenuItem>
+        <MenuItem index={1}>
           cool Link1
         </MenuItem>
-        <MenuItem>
+        <MenuItem index={2}>
           cool Link1
         </MenuItem>
       </Menu>
