@@ -3,20 +3,26 @@ import Button, { ButtonSize, ButtonType } from './components/Button/Button';
 import './styles/index.scss'
 import MenuItem from './components/Menu/menuItem';
 import Menu from './components/Menu/menu';
+import SubMenu from './components/Menu/subMenu';
 
 function App() {
   return (
     <div className="App">
-      <Menu defaultIndex={0} mode='vertical'>
-        <MenuItem index={0}>
+      <Menu defaultIndex='0' onSelect={(index) => {alert(index)}} mode='vertical' defaultOpenSubMenus={['2']}>
+        <MenuItem >
           cool Link
         </MenuItem>
-        <MenuItem index={1}>
+        <MenuItem>
           cool Link1
         </MenuItem>
-        <MenuItem index={2}>
-          cool Link1
-        </MenuItem>
+        <SubMenu title='dropdown'>
+          <MenuItem>
+            dropdown1
+          </MenuItem>
+          <MenuItem>
+            dropdown2
+          </MenuItem>
+        </SubMenu>
       </Menu>
       <header className="App-header">
         <Button autoFocus>Hello</Button>
