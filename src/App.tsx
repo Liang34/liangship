@@ -7,7 +7,7 @@ import Menu from './components/Menu/menu';
 function App() {
   return (
     <div className="App">
-      <Menu defaultIndex={0}>
+      <Menu defaultIndex={0} mode='vertical'>
         <MenuItem index={0}>
           cool Link
         </MenuItem>
