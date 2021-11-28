@@ -56,3 +56,9 @@ Sass/Less
 icon图标库：https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react
 使用的组件动画库：
 react-transition-group
+Stroybook:
+npx -p @storybook/cli sb init
+cnpm i -D @storybook/addon-info
+cnpm i -save @types/storybook__addon-info
+
+
