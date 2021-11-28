@@ -54,3 +54,5 @@ Sass/Less
 
 组件库样式变量分类
 icon图标库：https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react
+使用的组件动画库：
+react-transition-group
