@@ -4,11 +4,15 @@ import './styles/index.scss'
 import MenuItem from './components/Menu/menuItem';
 import Menu from './components/Menu/menu';
 import SubMenu from './components/Menu/subMenu';
-
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {fas} from '@fortawesome/free-solid-svg-icons'
+import Icon from './components/Icon/icon';
+library.add(fas)
 function App() {
   return (
     <div className="App">
-      <Menu defaultIndex='0' onSelect={(index) => {alert(index)}} mode='vertical' defaultOpenSubMenus={['2']}>
+      <Icon icon='arrow-down'/>
+      <Menu defaultIndex='0' onSelect={(index) => {alert(index)}} mode='horizontal' defaultOpenSubMenus={['2']}>
         <MenuItem >
           cool Link
         </MenuItem>
