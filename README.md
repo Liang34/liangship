@@ -61,4 +61,11 @@ npx -p @storybook/cli sb init
 cnpm i -D @storybook/addon-info
 cnpm i -save @types/storybook__addon-info
 
+[Stroybook的下载安装：](https://storybook.js.org/docs/react/get-started/install)
+
+```js
+npx -p @storybook/cli sb init
+```
+
+
 
