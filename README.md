@@ -67,5 +67,3 @@ cnpm i -save @types/storybook__addon-info
 npx -p @storybook/cli sb init
 ```
 
-
-
