@@ -11,6 +11,7 @@ library.add(fas)
 function App() {
   return (
     <div className="App">
+      <Icon icon='coffee'></Icon>
 <Menu defaultIndex='0' onSelect={(index) => {alert(index)}} mode='horizontal' defaultOpenSubMenus={['2']}>
   <MenuItem >
     cool Link
