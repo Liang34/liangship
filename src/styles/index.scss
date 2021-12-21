@@ -1,5 +1,6 @@
-@import './variables';
-@import './reboot';
+// sass的import不需要额外的请求
+@import './variables';// 变量
+@import './reboot';// normalize.css
 @import './mixin';
 // animation
 @import "animation";

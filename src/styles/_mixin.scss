@@ -3,7 +3,7 @@
   font-size: $font-size;
   border-radius: $border-raduis;
 }
-
+// lighten可以让颜色变浅
 @mixin button-style(
   $background,
   $border,

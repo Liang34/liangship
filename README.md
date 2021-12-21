@@ -1,56 +1,55 @@
-# Getting Started with Create React App
+### 前置准备：
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- 样式解决方案分析
+  Inline CSS
+  CSS in JS(style Component)
+  Sass/Less(√)`npm install node-sass --save`
 
-## Available Scripts
+  - CSS样式重置（normalize.css)：处理浏览器样式的不同
 
-In the project directory, you can run:
+  - 基础色彩系统
 
-### `yarn start`
+    创建自己组件库的色彩体系:详细见_variables.scss
+    系统色板=基础色板（[中国色](http://zhongguose.com/)）+中性色板（只含有黑白灰）
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    产品色板=品牌色（一般有两个颜色构成）+功能色
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  - 字体系统
 
-### `yarn test`
+  - 表单系统
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - 按钮
 
-### `yarn build`
+  - 边框和阴影
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 组件需求分析与编码
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 组件测试用例分析和编码
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 代码打包输出与编译
 
-### `yarn eject`
+- CI/CD,文档生成
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 第一个组件BUTTON：
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+需求：
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![](./images/Button01.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+导入使用方法：
 
-## Learn More
+```jsx
+<Button
+    size="lg"
+    type="primary"
+    disabled
+    href=""?// 要保证支持原生的属性
+    className=""?
+    autofocus=""?
+    >test</Button>
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-样式解决方案分析
-Inline CSS
-CSS in JS
-style Component
-Sass/Less
-创建自己组件库的色彩体系
-系统色板-基础色板+中性色板
+添加className使用classnames
 
 组件库样式变量分类
 icon图标库：https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react
