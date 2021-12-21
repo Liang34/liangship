@@ -52,7 +52,7 @@ const SubMenu: React.FC<SubMenuProps> = (props) => {
         console.error('Warning: Menu has a Child which is not a MenuItem component')
       }
     })
-    const subMenuClasses = classNames('viking-submenu', {
+    const subMenuClasses = classNames('submenu', {
       'menu-opened': menuOpen
     })
     return (

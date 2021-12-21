@@ -1,7 +1,7 @@
 import React, { CSSProperties, createContext, useState } from "react"
 import classNames from 'classnames'
 import { MenuItemProps } from './menuItem'
-type MenuMode = 'horizontal' | 'vertical' // String Literal Types
+type MenuMode = 'horizontal' | 'vertical' // String Literal Types比枚举更好用一点
 type SelectCallBack = (selectedIndex: string) => void
 export interface MenuProps {
   defaultIndex?: string; /**默认 active 的菜单项的索引值 */
@@ -21,10 +21,11 @@ export const MenuContext = createContext<IMenuContext>({index: '0'})
 export const Menu: React.FC<MenuProps> = (props) => {
   const { className, mode, style, children, defaultIndex, onSelect, defaultOpenSubMenus } = props
   const [ currentActive, setActive ] = useState(defaultIndex)
-  const classes = classNames('viking-menu', className, {
+  const classes = classNames('menu', className, {
     'menu-vertical': mode === 'vertical',
     'menu-horizontal': mode !== 'vertical'
   })
+  // 两件事一：改变高亮，二、用户需要执行的回调
   const handleClick = (index: string) => {
     setActive(index)
     if(onSelect) {
@@ -38,10 +39,12 @@ export const Menu: React.FC<MenuProps> = (props) => {
     defaultOpenSubMenus
   }
   const renderChildren = () => {
+    // 父组件操控children，直接用children.map可能会导致许多问题，因为children的数据结构是不确定的，
     return React.Children.map(children, (child, index) => {
       const childElement = child as React.FunctionComponentElement<MenuItemProps>
       const { displayName } = childElement.type
       if (displayName === 'MenuItem' || displayName === 'SubMenu') {
+        // 把index混进去
         return React.cloneElement(childElement, {
           index: index.toString()
         })

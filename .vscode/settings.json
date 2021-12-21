@@ -4,5 +4,6 @@
     "javascriptreact",
     { "language": "typescript", "autoFix": true },
     { "language": "typescriptreact", "autoFix": true }
-  ]
+  ],
+  "compile-hero.disable-compile-files-on-did-save-code": true
 }

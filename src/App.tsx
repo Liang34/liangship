@@ -11,23 +11,33 @@ library.add(fas)
 function App() {
   return (
     <div className="App">
-      <Icon icon='arrow-down'/>
-      <Menu defaultIndex='0' onSelect={(index) => {alert(index)}} mode='horizontal' defaultOpenSubMenus={['2']}>
-        <MenuItem >
-          cool Link
-        </MenuItem>
-        <MenuItem>
-          cool Link1
-        </MenuItem>
-        <SubMenu title='dropdown'>
-          <MenuItem>
-            dropdown1
-          </MenuItem>
-          <MenuItem>
-            dropdown2
-          </MenuItem>
-        </SubMenu>
-      </Menu>
+<Menu defaultIndex='0' onSelect={(index) => {alert(index)}} mode='horizontal' defaultOpenSubMenus={['2']}>
+  <MenuItem >
+    cool Link
+  </MenuItem>
+  <MenuItem>
+    cool Link1
+  </MenuItem>
+  <SubMenu title='dropdown'>
+    <MenuItem>
+      dropdown1
+    </MenuItem>
+    <MenuItem>
+      dropdown2
+    </MenuItem>
+  </SubMenu>
+  <SubMenu title='dropdown'>
+    <MenuItem>
+      dropdown1
+    </MenuItem>
+    <MenuItem>
+      dropdown2
+    </MenuItem>
+  </SubMenu>
+  <MenuItem>
+      dropdown2
+    </MenuItem>
+</Menu>
       <header className="App-header">
         <Button autoFocus>Hello</Button>
         <Button disabled>Hello</Button>
