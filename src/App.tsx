@@ -1,5 +1,5 @@
 import React from 'react';
-import Button, { ButtonSize, ButtonType } from './components/Button/Button';
+import Button, { ButtonSize, ButtonType } from './components/Button/button';
 import './styles/index.scss'
 import MenuItem from './components/Menu/menuItem';
 import Menu from './components/Menu/menu';
