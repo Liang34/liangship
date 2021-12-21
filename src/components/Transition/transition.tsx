@@ -6,7 +6,7 @@ type AnimationName = 'zoom-in-top' | 'zoom-in-left' | 'zoom-in-bottom' | 'zoom-i
 
 type TransitionProps = CSSTransitionProps & {
   animation?: AnimationName,
-  wrapper? : boolean,
+  wrapper? : boolean,// 避免transition属性覆盖
 }
 
 const Transition: React.FC<TransitionProps> = (props) => {
