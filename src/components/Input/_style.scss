@@ -1,4 +1,4 @@
-.jh-input-wrapper {
+.input-wrapper {
   display: flex;
   width: 100%;
   margin-bottom: 30px;
@@ -18,10 +18,10 @@
     }
   }
 }
-.icon-wrapper+.jh-input-inner {
+.icon-wrapper+.input-inner {
   padding-right: 35px;
 }
-.jh-input-inner {
+.input-inner {
   width: 100%;
   padding: $input-padding-y $input-padding-x;
   font-family: $input-font-family;
@@ -60,8 +60,8 @@
     opacity: 1;
   }
 }
-.jh-input-group-prepend,
-.jh-input-group-append {
+.input-group-prepend,
+.input-group-append {
   display: flex;
   align-items: center;
   padding: $input-padding-y $input-padding-x;
@@ -76,27 +76,27 @@
   border: $input-border-width solid $input-group-addon-border-color;
   border-radius: $input-border-radius;
 }
-.jh-input-group-append + .btn {
+.input-group-append + .btn {
   padding: 0;
   border: 0;
 }
-.input-group > .jh-input-group-prepend,
-.input-group.input-group-append > .jh-input-inner {
+.input-group > .input-group-prepend,
+.input-group.input-group-append > .input-inner {
   @include border-right-radius(0);
 }
 
-.input-group > .jh-input-group-append,
-.input-group.input-group-prepend > .jh-input-inner {
+.input-group > .input-group-append,
+.input-group.input-group-prepend > .input-inner {
   @include border-left-radius(0);
 }
 
-.input-size-sm .jh-input-inner {
+.input-size-sm .input-inner {
   padding: $input-padding-y-sm $input-padding-x-sm;
   font-size: $input-font-size-sm;
   border-radius: $input-border-radius-sm;
 }
 
-.input-size-lg .jh-input-inner {
+.input-size-lg .input-inner {
   padding: $input-padding-y-lg $input-padding-x-lg;
   font-size: $input-font-size-lg;
   border-radius: $input-border-radius-lg;

@@ -1,11 +1,11 @@
-import React, { InputHTMLAttributes, ReactElement, ChangeEvent, FC } from 'react'
-import classNames from 'classnames'
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import React, { ChangeEvent, ReactElement, InputHTMLAttributes } from "react";
+import classNames from "classnames";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Icon from '../Icon/icon'
 
-type InputSize = 'lg' | 'sm'
-
-export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size'> {
+type InputSize = "lg" | "sm";
+// 注意：因为InputHTMLAttributes里已经有size属性，会导致类型不匹配Omit可以忽略第二个参数的值
+export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size' > {
   /**是否禁用 Input */
   disabled?: boolean;
   /**设置 input 大小，支持 lg 或者是 sm */
@@ -18,7 +18,7 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
   append?: string | ReactElement;
   onChange? : (e: ChangeEvent<HTMLInputElement>) => void;
 }
-export const Input: FC<InputProps> = (props) => {
+export const Input: React.FC<InputProps> = (props) => {
   const {
     disabled,
     size,
@@ -28,7 +28,7 @@ export const Input: FC<InputProps> = (props) => {
     style,
     ...restProps
   } = props
-  const cnames = classNames('jh-input-wrapper', {
+  const cnames = classNames('input-wrapper', {
     [`input-size-${size}`]: size,
     'is-disabled': disabled,
     'input-group': prepend || append,
@@ -47,14 +47,16 @@ export const Input: FC<InputProps> = (props) => {
   }
   return (
     <div className={cnames} style={style}>
-      {prepend && <div className="jh-input-group-prepend">{prepend}</div>}
+      {prepend && <div className="input-group-prepend">{prepend}</div>}
       {icon && <div className="icon-wrapper"><Icon icon={icon} title={`title-${icon}`}/></div>}
       <input 
-        className="jh-input-inner"
+        className="input-inner"
         disabled={disabled}
         {...restProps}
       />
-      {append && <div className="jh-input-group-append">{append}</div>}
+      {append && <div className="input-group-append">{append}</div>}
     </div>
   )
 }
+
+export default Input;
