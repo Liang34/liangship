@@ -233,9 +233,28 @@ npm install --save @fortawesome/react-fontawesome
 使用的组件动画库：
 [react-transition-group](http://reactcommunity.org/react-transition-group/)
 
-### 第五各组件Input
+### 第五个组件Input
 
+设计：
 
+- 大小
+
+- 带图标
+- Disable状态
+- 带后缀或者前缀
+
+使用：
+
+```js
+<Input
+disabled
+size="lg|sm"
+icon="fontawesome 支持的图标"
+prepand="input 前缀，string 或者ReactElement"
+append="input 后缀,string 或者ReactElement"
+{...restProps}支持其他所有的HTML属性
+/>
+```
 
 Stroybook:
 npx -p @storybook/cli sb init
