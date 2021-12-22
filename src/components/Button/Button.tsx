@@ -1,16 +1,8 @@
 import React, { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react";
 import classNames from 'classnames'
 // 常量可以用枚举保存
-export enum ButtonSize {
-  Large = 'lg',
-  Small = 'sm'
-}
-export enum ButtonType {
-  Primary = 'primary',
-  Default = 'default',
-  Danger = 'danger',
-  Link = 'link'
-}
+export type ButtonSize = 'lg' | 'sm'
+export type ButtonType = 'primary' | 'default' | 'danger' | 'link'
 // props
 interface BaseButtonProps {
   className?: string;
@@ -41,10 +33,10 @@ const Button : React.FC<ButtonProps> = (props) => {
     [`btn-${btnType}`]: btnType,
     [`btn-${size}`]: size,
     // 注意，如果是link的话没有disable属性，需要手动添加该类
-    'disabled': (btnType === ButtonType.Link) && disabled
+    'disabled': (btnType === 'link') && disabled
   })
   // 如果是一个链接形式
-  if(btnType === ButtonType.Link && href) {
+  if(btnType === 'link' && href) {
     return (
       <a
         className = {classes}
@@ -68,6 +60,6 @@ const Button : React.FC<ButtonProps> = (props) => {
 
 Button.defaultProps = {
   disabled: false,
-  btnType: ButtonType.Default
+  btnType: 'default'
 }
 export default Button

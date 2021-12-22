@@ -1,9 +1,9 @@
-import React, { ChangeEvent, ReactElement, InputHTMLAttributes } from "react";
-import classNames from "classnames";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import React, { FC, ReactElement, InputHTMLAttributes, ChangeEvent } from 'react'
+import classNames from 'classnames'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import Icon from '../Icon/icon'
 
-type InputSize = "lg" | "sm";
+type InputSize = 'lg' | 'sm'
 // 注意：因为InputHTMLAttributes里已经有size属性，会导致类型不匹配Omit可以忽略第二个参数的值
 export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size' > {
   /**是否禁用 Input */
@@ -18,7 +18,17 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
   append?: string | ReactElement;
   onChange? : (e: ChangeEvent<HTMLInputElement>) => void;
 }
-export const Input: React.FC<InputProps> = (props) => {
+
+/**
+ * Input 输入框 通过鼠标或键盘输入内容，是最基础的表单域的包装。
+ * 
+ * ~~~js
+ * // 这样引用
+ * import { Input } from 'vikingship'
+ * ~~~
+ * 支持 HTMLInput 的所有基本属性
+ */
+export const Input: FC<InputProps> = (props) => {
   const {
     disabled,
     size,
@@ -28,33 +38,35 @@ export const Input: React.FC<InputProps> = (props) => {
     style,
     ...restProps
   } = props
-  const cnames = classNames('input-wrapper', {
+  const cnames = classNames('viking-input-wrapper', {
     [`input-size-${size}`]: size,
     'is-disabled': disabled,
     'input-group': prepend || append,
     'input-group-append': !!append,
     'input-group-prepend': !!prepend
   })
+  // 避免受控组件转向非受控组件报错
   const fixControlledValue = (value: any) => {
     if (typeof value === 'undefined' || value === null) {
       return ''
     }
     return value
   }
+  // value与defultValue不能同时存在与一个组件上
   if('value' in props) {
     delete restProps.defaultValue
     restProps.value = fixControlledValue(props.value)
   }
   return (
     <div className={cnames} style={style}>
-      {prepend && <div className="input-group-prepend">{prepend}</div>}
+      {prepend && <div className="viking-input-group-prepend">{prepend}</div>}
       {icon && <div className="icon-wrapper"><Icon icon={icon} title={`title-${icon}`}/></div>}
       <input 
-        className="input-inner"
+        className="viking-input-inner"
         disabled={disabled}
         {...restProps}
       />
-      {append && <div className="input-group-append">{append}</div>}
+      {append && <div className="viking-input-group-append">{append}</div>}
     </div>
   )
 }
