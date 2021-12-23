@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Button from './button';
+import Button from './button'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -17,6 +17,9 @@ export default {
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
+Primary.args = {
+  btnType: 'primary'
+}
 
 
 export const Secondary = Template.bind({});
@@ -26,7 +29,8 @@ Secondary.args = {
 
 export const Large = Template.bind({});
 Large.args = {
-  size: 'lg'
+  size: 'lg',
+  children: 'text'
 };
 
 export const Small = Template.bind({});
