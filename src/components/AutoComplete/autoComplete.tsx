@@ -29,7 +29,7 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
   const [ loading, setLoading ] = useState(false)
   const [ showDropdown, setShowDropdown] = useState(false)
   const [ highlightIndex, setHighlightIndex] = useState(-1)
-  const triggerSearch = useRef(false)
+  const triggerSearch = useRef(false)// 保存值，避免enter之后再次发起请求
   const componentRef = useRef<HTMLDivElement>(null)
   const debouncedValue = useDebounce(inputValue, 300)
   useClickOutside(componentRef, () => { setSugestions([])})
@@ -66,19 +66,19 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
     setHighlightIndex(index)
   }
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
-    switch(e.keyCode) {
-      case 13:
+    switch(e.key) {
+      case '13': // enter
         if (suggestions[highlightIndex]) {
           handleSelect(suggestions[highlightIndex])
         }
         break
-      case 38:
+      case '38':
         highlight(highlightIndex - 1)
         break
-      case 40:
+      case '40':
         highlight(highlightIndex + 1)
         break
-      case 27:
+      case '27': // esc
         setShowDropdown(false)
         break
       default:
