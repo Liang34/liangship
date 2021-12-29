@@ -38,7 +38,7 @@ export const Input: FC<InputProps> = (props) => {
     style,
     ...restProps
   } = props
-  const cnames = classNames('viking-input-wrapper', {
+  const cnames = classNames('input-wrapper', {
     [`input-size-${size}`]: size,
     'is-disabled': disabled,
     'input-group': prepend || append,
@@ -59,14 +59,14 @@ export const Input: FC<InputProps> = (props) => {
   }
   return (
     <div className={cnames} style={style}>
-      {prepend && <div className="viking-input-group-prepend">{prepend}</div>}
+      {prepend && <div className="input-group-prepend">{prepend}</div>}
       {icon && <div className="icon-wrapper"><Icon icon={icon} title={`title-${icon}`}/></div>}
       <input 
-        className="viking-input-inner"
+        className="input-inner"
         disabled={disabled}
         {...restProps}
       />
-      {append && <div className="viking-input-group-append">{append}</div>}
+      {append && <div className="input-group-append">{append}</div>}
     </div>
   )
 }
