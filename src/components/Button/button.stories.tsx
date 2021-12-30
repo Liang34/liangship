@@ -3,37 +3,31 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Button from './button'
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'Button',
   component: Button,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 } as ComponentMeta<typeof Button>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
-
+// 编写一个按钮
 export const Primary = Template.bind({});
 Primary.args = {
-  btnType: 'primary'
+  btnType: 'primary',
+  children: 'Primary Button'
+}
+export const Disable = Template.bind({});
+Disable.args = {
+  disabled: true,
+  children: 'Diaable Button'
 }
 
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  disabled: true
-};
-
-export const Large = Template.bind({});
-Large.args = {
+export const ButtonSize = Template.bind({});
+ButtonSize.args = {
   size: 'lg',
-  children: 'text'
+  children: 'Size'
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'sm'
-};
+// export const Small = Template.bind({});
+// Small.args = {
+//   size: 'sm'
+// };
