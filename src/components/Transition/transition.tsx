@@ -4,19 +4,21 @@ import { CSSTransitionProps } from 'react-transition-group/CSSTransition'
 
 type AnimationName = 'zoom-in-top' | 'zoom-in-left' | 'zoom-in-bottom' | 'zoom-in-right'
 
-type TransitionProps = CSSTransitionProps & {
+// type CSSTransitionProps<Ref extends HTMLElement | undefined = undefined> = (TimeoutProps<Ref> & {
+//   classNames?: string | CSSTransitionClassNames | undefined;
+// }) | (EndListenerProps<Ref> & {
+//   ...;
+//   })
+
+export type TransitionProps<Ref extends HTMLElement | undefined = undefined> = CSSTransitionProps<Ref> & {
   animation?: AnimationName,
-  wrapper? : boolean,// 避免transition属性覆盖
+  // 添加一层dom, 避免 内置 transition冲突
+  wrapper?: boolean
 }
 
 const Transition: React.FC<TransitionProps> = (props) => {
-  const {
-    children,
-    classNames,
-    animation,
-    wrapper,
-    ...restProps
-  } = props
+  const { children, classNames, animation, wrapper, ...restProps } = props
+
   return (
     <CSSTransition
       classNames = { classNames ? classNames : animation}
@@ -26,9 +28,10 @@ const Transition: React.FC<TransitionProps> = (props) => {
     </CSSTransition>
   )
 }
+
 Transition.defaultProps = {
-  unmountOnExit: true,
-  appear: true,
+  unmountOnExit: true, // 进入时挂载, 离开时卸载
+  appear: true // 初次加载时也有动画
 }
 
 export default Transition
