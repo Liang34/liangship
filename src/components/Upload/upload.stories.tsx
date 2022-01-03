@@ -35,7 +35,7 @@ const SimpleUpload = () => {
       // beforeUpload={filePromise}
       // name="fileName"
       // data={{ 'key': 'value' }}
-      // headers={{'X-Powered-By': 'vikingship'}}
+      // headers={{'X-Powered-By': 'liangship'}}
       // accept=".jpg"
       // multiple
       drag

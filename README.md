@@ -270,4 +270,8 @@ cnpm i -save @types/storybook__addon-info
 ```js
 npx -p @storybook/cli sb init
 ```
+项目打包：npm run build
+npm link测试：
+1、直接在被测试项目下运行 npm link
+2、在测试的项目下运行 npm link liangShip
 

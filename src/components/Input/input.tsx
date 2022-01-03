@@ -21,10 +21,10 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
 
 /**
  * Input 输入框 通过鼠标或键盘输入内容，是最基础的表单域的包装。
- * 
+ *
  * ~~~js
  * // 这样引用
- * import { Input } from 'vikingship'
+ * import { Input } from 'liangship'
  * ~~~
  * 支持 HTMLInput 的所有基本属性
  */
@@ -61,7 +61,7 @@ export const Input: FC<InputProps> = (props) => {
     <div className={cnames} style={style}>
       {prepend && <div className="input-group-prepend">{prepend}</div>}
       {icon && <div className="icon-wrapper"><Icon icon={icon} title={`title-${icon}`}/></div>}
-      <input 
+      <input
         className="input-inner"
         disabled={disabled}
         {...restProps}
