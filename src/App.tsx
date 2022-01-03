@@ -7,7 +7,7 @@ import axios from 'axios'
 // import IconDemo from './demos/icon-demo'
 // import TransitionDemo from './demos/transition-demo'
 // import InputDemo from './demos/input-demo'
-import UploadDemo from './demos/upload-demo'
+// import UploadDemo from './demos/upload-demo'
 
 function App() {
   const [title, setTitle] = useState('')
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       {title}
-      <UploadDemo />
+      {/* <UploadDemo /> */}
       {/* <InputDemo /> */}
       {/* <TransitionDemo /> */}
       {/* <IconDemo /> */}
