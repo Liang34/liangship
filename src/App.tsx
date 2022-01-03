@@ -1,53 +1,35 @@
-import React from 'react';
-import Button, { ButtonSize, ButtonType } from './components/Button/button';
-import './styles/index.scss'
-import MenuItem from './components/Menu/menuItem';
-import Menu from './components/Menu/menu';
-import SubMenu from './components/Menu/subMenu';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import {fas} from '@fortawesome/free-solid-svg-icons'
-import Icon from './components/Icon/icon';
-library.add(fas)
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+// import ButtonDemo from './demos/button-demo'
+// import AlertDemo from './demos/alert-demo'
+// import MenuDemo from './demos/menu-demo'
+// import TabsDemo from './demos/tabs-demo'
+// import IconDemo from './demos/icon-demo'
+// import TransitionDemo from './demos/transition-demo'
+// import InputDemo from './demos/input-demo'
+import UploadDemo from './demos/upload-demo'
+
 function App() {
+  const [title, setTitle] = useState('')
+  useEffect(() => {
+    axios.get('https://jsonplaceholder.typicode.com/posts/1').then(response => {
+      console.log(response);
+      setTitle(response.data.title)
+    })
+  })
   return (
     <div className="App">
-      <Icon icon='coffee'></Icon>
-<Menu defaultIndex='0' onSelect={(index) => {alert(index)}} mode='horizontal' defaultOpenSubMenus={['2']}>
-  <MenuItem >
-    cool Link
-  </MenuItem>
-  <MenuItem>
-    cool Link1
-  </MenuItem>
-  <SubMenu title='dropdown'>
-    <MenuItem>
-      dropdown1
-    </MenuItem>
-    <MenuItem>
-      dropdown2
-    </MenuItem>
-  </SubMenu>
-  <SubMenu title='dropdown'>
-    <MenuItem>
-      dropdown1
-    </MenuItem>
-    <MenuItem>
-      dropdown2
-    </MenuItem>
-  </SubMenu>
-  <MenuItem>
-      dropdown2
-    </MenuItem>
-</Menu>
-      <header className="App-header">
-        <Button autoFocus>Hello</Button>
-        <Button disabled>Hello</Button>
-        <Button onClick={()=>{console.log('12212')}} btnType={ButtonType.Primary} size={ButtonSize.Small}>Hello</Button>
-        <Button btnType={ButtonType.Danger} size={ButtonSize.Large}>Hello</Button>
-        <Button btnType={ButtonType.Link} href='www.baiudu,com'>Hello</Button>
-      </header>
+      {title}
+      <UploadDemo />
+      {/* <InputDemo /> */}
+      {/* <TransitionDemo /> */}
+      {/* <IconDemo /> */}
+      {/* <TabsDemo /> */}
+      {/* <MenuDemo /> */}
+      {/* <ButtonDemo /> */}
+      {/* <AlertDemo /> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
