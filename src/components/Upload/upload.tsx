@@ -20,7 +20,7 @@ export interface UploadFile {
  * ### 引用方法
  *
  * ~~~js
- * import { Upload} from 'liang-ship-ui'
+ * import { Upload} from 'liangship'
  * ~~~
  */
 export interface UploadProps {

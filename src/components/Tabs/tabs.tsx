@@ -20,7 +20,7 @@ export interface TabProps {
  * ### 引用方法
  *
  * ~~~js
- * import { Tabs } from 'liangship-ui'
+ * import { Tabs } from 'liangship'
  * ~~~
  */
 export const Tabs: React.FC<TabProps> = (props) => {

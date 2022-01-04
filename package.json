@@ -1,6 +1,6 @@
 {
   "name": "liangship",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -11,6 +11,9 @@
     "Component",
     "UI",
     "React"
+  ],
+  "files": [
+    "dist"
   ],
   "homepage": "https://github.com/Liang34/liangship",
   "repository": {
@@ -81,6 +84,7 @@
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
     "@storybook/node-logger": "^6.4.9",
+    "@storybook/addon-info": "^5.3.21",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.4.9",
     "@testing-library/jest-dom": "^5.11.4",
