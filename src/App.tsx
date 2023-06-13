@@ -20,14 +20,6 @@ function App() {
   return (
     <div className="App">
       {title}
-      {/* <UploadDemo /> */}
-      {/* <InputDemo /> */}
-      {/* <TransitionDemo /> */}
-      {/* <IconDemo /> */}
-      {/* <TabsDemo /> */}
-      {/* <MenuDemo /> */}
-      {/* <ButtonDemo /> */}
-      {/* <AlertDemo /> */}
     </div>
   )
 }
