@@ -39,7 +39,7 @@ addParameters({
 })
 
 const loaderFn = () => {
-  const allExports = [require('../src/welcome.stories.tsx'), require('../src/Introduction.stories.mdx')]
+  const allExports = []
   const req = require.context('../src/components', true, /\.stories\.tsx$/)
   req.keys().forEach(file => allExports.push(req(file)))
   return allExports
