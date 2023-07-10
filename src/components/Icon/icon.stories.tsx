@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import Icon from './icon'
-import Button from '../Button/button'
+import Button from '../Button'
 
 const defaultIcon = () => (
   <>
