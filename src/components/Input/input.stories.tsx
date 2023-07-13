@@ -1,30 +1,41 @@
 import React, { useState } from 'react'
-import { storiesOf } from '@storybook/react'
+import { storiesOf, ComponentStory, ComponentMeta } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { Input } from './input'
-const ControlledInput = () => {
+
+
+
+
+
+// storiesOf('Input', module)
+//   .add('Input', defaultInput)
+//   .add('被禁用的 Input', disabledInput)
+//   .add('带图标的 Input', iconInput)
+//   .add('大小不同的 Input', sizeInput)
+//   .add('带前后缀的 Input', pandInput)
+
+export default {
+  title: 'Example/Input',
+  component: Input,
+} as ComponentMeta<typeof Input>;
+
+const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
+export const Primary = Template.bind({});
+
+export const ControlledInput = () => {
   const [value, setValue] = useState('')
-  return <Input value={value} defaultValue={value} onChange={(e) => {setValue(e.target.value)}}/>
+  return <Input value={value} defaultValue={value} onChange={(e) => { setValue(e.target.value) }} />
 }
-const defaultInput = () => (
-  <>
+
+export const disabledInput = () => (
   <Input
-    style={{width: '300px'}}
-    placeholder="placehold"
-    onChange={action('changed')}
-  />
-  <ControlledInput />
-  </>
-)
-const disabledInput = () => (
-  <Input
-    style={{width: '300px'}}
+    style={{ width: '300px' }}
     placeholder="disabled input"
-    disabled 
+    disabled
   />
 )
 
-const iconInput = () => (
+export const iconInput = () => (
   <Input
     style={{width: '300px'}}
     placeholder="input with icon"
@@ -32,7 +43,7 @@ const iconInput = () => (
   />  
 )
 
-const sizeInput = () => (
+export const sizeInput = () => (
   <>
     <Input
       style={{width: '300px'}}
@@ -47,7 +58,7 @@ const sizeInput = () => (
   </>
 )
 
-const pandInput = () => (
+export const pandInput = () => (
   <>
     <Input
       style={{width: '300px'}}
@@ -59,14 +70,5 @@ const pandInput = () => (
       defaultValue="google"
       append=".com"
     />
-    
   </>
 )
-
-
-storiesOf('Input component', module)
-  .add('Input', defaultInput)
-  .add('被禁用的 Input', disabledInput)
-  .add('带图标的 Input', iconInput)
-  .add('大小不同的 Input', sizeInput)
-  .add('带前后缀的 Input', pandInput)
