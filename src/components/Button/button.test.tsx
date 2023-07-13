@@ -1,6 +1,7 @@
 import React from 'react'
+// https://testing-library.com/docs/react-testing-library/intro/
 import { render, fireEvent } from '@testing-library/react'
-import Button, { ButtonProps } from './button'
+import Button, { ButtonProps } from './Button'
 const defaultProps = {
   onClick: jest.fn()// 创建模拟一个被点击的事件
 }

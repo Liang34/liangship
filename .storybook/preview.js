@@ -13,13 +13,13 @@ export const parameters = {
     },
   },
 }
-const wrapperStyle: React.CSSProperties = {
+const wrapperStyle = {
   padding: '20px 40px',
   // width: '500px'
   // background: 'pink'
 }
 // 定义内容居中的组件
-const StoryWrapper = (storyFn: any) => (
+const StoryWrapper = (storyFn) => (
   <div style={wrapperStyle}>
     <h3>组件演示</h3>
     {storyFn()}
