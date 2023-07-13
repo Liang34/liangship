@@ -1,5 +1,5 @@
 import React from 'react'
-import Input from '../components/Input/input'
+import Input from '../components/Input/Input'
 import AutoComplete, { DataSourceType } from '../components/AutoComplete/autoComplete'
 
 interface itemProps {

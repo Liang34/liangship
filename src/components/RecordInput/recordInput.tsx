@@ -1,7 +1,7 @@
 import React, { FC, useRef, useState } from "react";
 import Input from "../Input";
 import Button from "../Button";
-import { InputProps } from "../Input/input";
+import { InputProps } from "../Input/Input";
 import { ButtonProps } from "../Button/Button";
 
 interface RecordInputProps {

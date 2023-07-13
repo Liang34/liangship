@@ -1,18 +1,6 @@
 import React, { useState } from 'react'
-import { storiesOf, ComponentStory, ComponentMeta } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
-import { Input } from './input'
-
-
-
-
-
-// storiesOf('Input', module)
-//   .add('Input', defaultInput)
-//   .add('被禁用的 Input', disabledInput)
-//   .add('带图标的 Input', iconInput)
-//   .add('大小不同的 Input', sizeInput)
-//   .add('带前后缀的 Input', pandInput)
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { Input } from './Input'
 
 export default {
   title: 'Example/Input',
