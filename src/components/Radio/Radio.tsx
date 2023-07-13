@@ -35,8 +35,8 @@ const Radio = (props: radioProps) => {
     });
 
     React.useEffect(() => {
-        // props参数改变更正props
-        if (props.checked && props.checked !== checked) {
+        // props参数改变更正props, 用props.check会有问题？？？
+        if ('checked' in props && props.checked !== checked) {
             setChecked(props.checked);
         }
     }, [props.checked])
@@ -46,6 +46,7 @@ const Radio = (props: radioProps) => {
         if (disabled || checked) {
             return;
         }
+        // 当不传checked时为设为true
         if (!('checked' in props)) {
             setChecked(true);
         }

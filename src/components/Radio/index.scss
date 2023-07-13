@@ -1,16 +1,4 @@
-.liang-radio-group {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: rgba(0, 0, 0, 0.85);
-  font-size: 14px;
-  font-variliang: tabular-nums;
-  line-height: 1.5715;
-  list-style: none;
-  font-feature-settings: 'tnum';
-  display: inline-block;
-  font-size: 0;
-}
+
 .liang-radio-group .liang-badge-count {
   z-index: 1;
 }
@@ -320,9 +308,7 @@ span.liang-radio + * {
     opacity: 0;
   }
 }
-.liang-radio-group.liang-radio-group-rtl {
-  direction: rtl;
-}
+
 .liang-radio-wrapper.liang-radio-wrapper-rtl {
   margin-right: 0;
   margin-left: 8px;
