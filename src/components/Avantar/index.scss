@@ -1,0 +1,105 @@
+.bobo-avatar {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    font-varibobo: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: 'tnum';
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    background: #ccc;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+  }
+  .bobo-avatar-image {
+    background: transparent;
+  }
+  .bobo-avatar .bobo-image-img {
+    display: block;
+  }
+  .bobo-avatar-string {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 center;
+  }
+  .bobo-avatar.bobo-avatar-icon {
+    font-size: 18px;
+  }
+  .bobo-avatar.bobo-avatar-icon > .boboicon {
+    margin: 0;
+  }
+  .bobo-avatar-lg {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+  }
+  .bobo-avatar-lg-string {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 center;
+  }
+  .bobo-avatar-lg.bobo-avatar-icon {
+    font-size: 24px;
+  }
+  .bobo-avatar-lg.bobo-avatar-icon > .boboicon {
+    margin: 0;
+  }
+  .bobo-avatar-sm {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+  }
+  .bobo-avatar-sm-string {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 center;
+  }
+  .bobo-avatar-sm.bobo-avatar-icon {
+    font-size: 14px;
+  }
+  .bobo-avatar-sm.bobo-avatar-icon > .boboicon {
+    margin: 0;
+  }
+  .bobo-avatar-square {
+    border-radius: 2px;
+  }
+  .bobo-avatar > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .bobo-avatar-group {
+    display: inline-flex;
+  }
+  .bobo-avatar-group .bobo-avatar {
+    border: 1px solid #fff;
+  }
+  .bobo-avatar-group .bobo-avatar:not(:first-child) {
+    margin-left: -8px;
+  }
+  .bobo-avatar-group-popover .bobo-avatar + .bobo-avatar {
+    margin-left: 3px;
+  }
+  .bobo-avatar-group-rtl .bobo-avatar:not(:first-child) {
+    margin-right: -8px;
+    margin-left: 0;
+  }
+  .bobo-avatar-group-popover.bobo-popover-rtl .bobo-avatar + .bobo-avatar {
+    margin-right: 3px;
+    margin-left: 0;
+  }
+  
