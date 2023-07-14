@@ -1,3 +1,7 @@
+### LiangShip:
+
+Hi, 这个
+
 ### 前置准备：
 
 - 样式解决方案分析
@@ -6,35 +10,26 @@
   Sass/Less(√)`npm install node-sass --save`
 
   - CSS样式重置（normalize.css)：处理浏览器样式的不同
-
   - 基础色彩系统
 
     创建自己组件库的色彩体系:详细见_variables.scss
     系统色板=基础色板（[中国色](http://zhongguose.com/)）+中性色板（只含有黑白灰）
 
     产品色板=品牌色（一般有两个颜色构成）+功能色
-
   - 字体系统
-
   - 表单系统
-
   - 按钮
-
   - 边框和阴影
-
 - 组件需求分析与编码
-
 - 组件测试用例分析和编码
-
 - 代码打包输出与编译
-
 - CI/CD,文档生成
 
 ### 组件测试：
 
 通过在App.tsx中引入组件并引入进而观察是否生效有点过于低效，可以通过写测试让计算机运行，从而提高代码质量，更早发现BUG。
 
-直接运行`npm run test`即可
+直接运行 `npm run test`即可
 
 通用测试框架[JEST](https://www.jestjs.cn/)，Create React-app自带。
 
@@ -67,8 +62,6 @@ test('our first react test case', () => {
 安装jest-dom：添加新的断言
 
 ### 使用Storebook写文档
-
-
 
 ### 第一个组件BUTTON：
 
@@ -153,7 +146,7 @@ defaultOpenSubMenus={['2']}
 
 问题：
 
-- 把父组件的一些属性传递给子组件如`defaultIndex`、`onSelect`事件，可以使用Context来传递。
+- 把父组件的一些属性传递给子组件如 `defaultIndex`、`onSelect`事件，可以使用Context来传递。
 
 ```tsx
 interface IMenuContext {
@@ -238,7 +231,6 @@ npm install --save @fortawesome/react-fontawesome
 设计：
 
 - 大小
-
 - 带图标
 - Disable状态
 - 带后缀或者前缀
@@ -258,8 +250,6 @@ append="input 后缀,string 或者ReactElement"
 
 ### AutoComplete
 
-
-
 Stroybook:
 npx -p @storybook/cli sb init
 cnpm i -D @storybook/addon-info
@@ -270,8 +260,8 @@ cnpm i -save @types/storybook__addon-info
 ```js
 npx -p @storybook/cli sb init
 ```
+
 项目打包：npm run build
 npm link测试：
 1、直接在被测试项目下运行 npm link
 2、在测试的项目下运行 npm link liangShip
-
