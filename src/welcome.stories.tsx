@@ -7,7 +7,7 @@ storiesOf('Welcome', module)
       <>
         <h1>欢迎来到 liangShip 组件库</h1>
         <p>所用技术：React、React Hooks、sass、typescript等开发</p>
-        <p>目前已经有16个组件, 已发布到npm上</p>
+        <p>目前已经有17个组件, 已发布到npm上</p>
         <h3>尝试安装</h3>
         <code>
           npm install liangShip --save
