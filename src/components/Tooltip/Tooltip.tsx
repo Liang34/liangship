@@ -47,7 +47,7 @@ const Tooltip = (props: tooltipProps) => {
             </div>
         </div>
     </div>);
-
+    // @ts-ignore
     const handleBeforePosition = (position, {target, placement}) => {
         setPlacement(placement);
 
@@ -64,6 +64,7 @@ const Tooltip = (props: tooltipProps) => {
     return <Popup
         {...others}
         style={style}
+        // @ts-ignore
         trigger={children}
         triggerType="hover"
         placement={placement}

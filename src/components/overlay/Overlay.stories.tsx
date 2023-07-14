@@ -44,7 +44,9 @@ export const UnderControl = () => {
   return <>
     <Button onClick={() => setVisible(true)} ref={buttonRef}>click</Button>
     点击按钮可以唤起弹出，点击其他地方取消弹窗
+    {/** @ts-ignore */}
     <Overlay visible={visible} onVisibleChange={v => setVisible(v)}
+    // @ts-ignore
       target={() => buttonRef.current}
     >
       <div style={{
@@ -63,7 +65,9 @@ export const Points = () => {
   const buttonRef = useRef(null);
   return <>
     <Button onClick={() => setVisible(true)} ref={buttonRef}>click</Button>
+    {/** @ts-ignore */}
     <Overlay visible={visible} onVisibleChange={v => setVisible(v)}
+    // @ts-ignore
       target={() => buttonRef.current}
       points={['tl', 'tl']}
     >

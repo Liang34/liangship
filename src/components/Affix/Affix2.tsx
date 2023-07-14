@@ -11,23 +11,26 @@ export interface affixProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const Affix = (props: affixProps) => {
-    const { className, children, style, offsetTop, ...others } = props;
-    const [wraperStyle, setWrapperStyle] = useState(null);
+    const { className, children, style, offsetTop=0, ...others } = props;
+    const [wraperStyle ={}, setWrapperStyle] = useState(null);
     const [affixed, setAffixed] = useState(false);
 
     const wraperRef = useRef(null);
     const fixedRef = useRef(null);
 
     function updatePosition() {
-        const { top, width, height } = wraperRef.current.getBoundingClientRect();
+        // @ts-ignore
+        const { top, width, height } = wraperRef.current?.getBoundingClientRect();
         if (top <= offsetTop && !affixed) {
             setWrapperStyle({
+                // @ts-ignore
                 width,
                 height
             });
             setAffixed(true);
         } else if (top > offsetTop) {
             setAffixed(false);
+            // @ts-ignore
             fixedRef.current.setAttribute('style', null);
         }
     }
@@ -49,11 +52,11 @@ const Affix = (props: affixProps) => {
         [className as string]: !!className
     })
     return <div ref={wraperRef}>
-        {affixed ? <div style={wraperStyle} /> : null}
+        {affixed ? <div style={wraperStyle!} /> : null}
         <div style={affixed ? {
             top: offsetTop,
             ...wraperStyle
-        } : null} ref={fixedRef} className={cls}>
+        } : undefined} ref={fixedRef} className={cls}>
             {children}
         </div>
     </div>;

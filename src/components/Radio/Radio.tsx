@@ -37,6 +37,7 @@ const Radio = (props: radioProps) => {
     React.useEffect(() => {
         // props参数改变更正props, 用props.check会有问题？？？
         if ('checked' in props && props.checked !== checked) {
+            // @ts-ignore
             setChecked(props.checked);
         }
     }, [props.checked])
