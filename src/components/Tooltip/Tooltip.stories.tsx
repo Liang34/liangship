@@ -14,7 +14,7 @@ const Template: ComponentStory<typeof Tooltip> = (args) => <Tooltip {...args} />
 export const Primary = Template.bind({});
 Primary.args = {
   // type: 'primary',
-  children: 'Tooltip',
+  children: <p>'Tooltip'</p>,
 };
 
 export const Basic = () => {

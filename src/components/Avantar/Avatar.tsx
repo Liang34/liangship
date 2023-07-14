@@ -40,6 +40,7 @@ const Avatar = (props: avatarProps) => {
       if (!node || !wraperNode) {
         return;
       }
+      // @ts-ignore
       const wraperWidth = wraperNode.offsetWidth;
       const textWidth = node.offsetWidth;
       const gap = 4;

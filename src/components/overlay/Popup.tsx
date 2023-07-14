@@ -29,6 +29,7 @@ const Popup = (props: popupProps) => {
       mouseOutTimer.current = null;
     }
     if (!mouseEnterTimer.current && !visible) {
+      // @ts-ignore
       mouseEnterTimer.current = setTimeout(() => {
         setVisible(true);
       }, 100);
@@ -41,6 +42,7 @@ const Popup = (props: popupProps) => {
       mouseEnterTimer.current = null;
     }
     if (!mouseOutTimer.current && visible) {
+      // @ts-ignore
       mouseOutTimer.current = setTimeout(() => {
         setVisible(false);
       }, 100);
@@ -59,7 +61,7 @@ const Popup = (props: popupProps) => {
   } else {
     triggerProps.onClick = () => setVisible(true);
   }
-
+  // @ts-ignore
   const handleVisibleChange = (visible) => {
     setVisible(visible)
   }

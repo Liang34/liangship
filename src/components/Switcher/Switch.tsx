@@ -27,7 +27,7 @@ const Switch = (props: switchProps) => {
 
     useEffect(() => {
         if ('checked' in props) {
-            setChecked(pchecked);
+            setChecked(pchecked!);
         }
     }, [pchecked])
 

@@ -34,7 +34,7 @@ export const Disabled: React.FC = () => {
     <>
       <Switch disabled={disabled} defaultChecked />
       <br /><br />
-      <Button type="primary" onClick={toggle}>
+      <Button btnType="primary" onClick={toggle}>
         Toggle disabled
       </Button>
     </>
