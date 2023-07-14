@@ -7,5 +7,5 @@ const defaultRecordInput = () => (
 )
 
 
-storiesOf('RecordInput Component', module)
+storiesOf('example/RecordInput', module)
   .add('default', defaultRecordInput)

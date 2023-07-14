@@ -38,7 +38,7 @@ const iconWithAction = () => (
 )
 
 
-storiesOf('Icon Component', module)
+storiesOf('example/Icon', module)
   .add('Icon', defaultIcon)
   .add('不同主题的 Icon', iconWithTheme)
   .add('更多行为的 Icon', iconWithAction)
