@@ -3,6 +3,7 @@ dependencies:
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-solid-svg-icons': 5.15.4
   '@fortawesome/react-fontawesome': 0.1.19_f515edce028694561ceb456e3dba224c
+  async-validator: 4.2.5
   axios: 0.21.4
   classnames: 2.3.2
   react-transition-group: 4.4.5_react-dom@17.0.2+react@17.0.2
@@ -7815,6 +7816,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==
+  /async-validator/4.2.5:
+    dev: false
+    resolution:
+      integrity: sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==
   /async/2.6.4:
     dependencies:
       lodash: 4.17.21
@@ -21397,6 +21402,7 @@ specifiers:
   '@types/react-dom': ^17.0.0
   '@types/react-transition-group': ^4.4.1
   '@types/storybook__addon-info': ^5.2.3
+  async-validator: 4.2.5
   axios: ^0.21.1
   classnames: ^2.2.6
   cross-env: ^7.0.3
