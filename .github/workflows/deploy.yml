@@ -1,28 +1,28 @@
-name: Build and Deploy
-on: [push]
-permissions:
-  contents: write
-jobs:
-  build-and-deploy:
-    concurrency: ci-${{ github.ref }} # 密钥，可以不写
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
-        with:
-          node-version: 14
-      - name: Install pnpm
-        run: curl -f https://get.pnpm.io/v6.14.js | node - add --global pnpm
-      - name: remove lockfile
-        run: rm pnpm-lock.yaml
-      - name: Install dependencies
-        run: pnpm install
-      - name: Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-        run:
-          pnpm build-storybook
+# name: Build and Deploy
+# on: [push]
+# permissions:
+#   contents: write
+# jobs:
+#   build-and-deploy:
+#     concurrency: ci-${{ github.ref }} # 密钥，可以不写
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout 🛎️
+#         uses: actions/checkout@v3
+#         with:
+#           node-version: 14
+#       - name: Install pnpm
+#         run: curl -f https://get.pnpm.io/v6.14.js | node - add --global pnpm
+#       - name: remove lockfile
+#         run: rm pnpm-lock.yaml
+#       - name: Install dependencies
+#         run: pnpm install
+#       - name: Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+#         run:
+#           pnpm build-storybook
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.3.0
-        with:
-          branch: gh-pages
-          folder: storybook-static # The folder the action should deploy.
+#       - name: Deploy 🚀
+#         uses: JamesIves/github-pages-deploy-action@v4.3.0
+#         with:
+#           branch: gh-pages
+#           folder: storybook-static # The folder the action should deploy.
