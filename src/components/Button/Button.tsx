@@ -30,7 +30,7 @@ export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
  * import { Button } from 'liangship-ui'
  * ~~~
  */
-const Button : React.FC<ButtonProps> = (props) => {
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props: ButtonProps, ref) => {
   const {
     btnType,
     disabled,
@@ -61,6 +61,7 @@ const Button : React.FC<ButtonProps> = (props) => {
   } else {
     return (
     <button
+      ref={ref}
       className={classes}
       disabled={disabled}
       {...restProps}
@@ -68,7 +69,7 @@ const Button : React.FC<ButtonProps> = (props) => {
     </button>
     )
   }
-}
+})
 
 Button.defaultProps = {
   disabled: false,
