@@ -8,8 +8,23 @@ Hi, 欢迎来到LiangShip组件库，目前组件已经有18个基础组件，�
 
 即可下载
 
-项目运行:
+### 技术栈：
 
+React、TypeScript、Scss、StoryBook
+
+### 项目运行:
+
+##### 项目调试
+
+`pnpm install`
+
+`pnpm start`
+
+查看文档：
+
+```bash
+pnpm storybook
+```
 
 ### 前置准备：
 
