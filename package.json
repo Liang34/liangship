@@ -28,7 +28,8 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "resize-observer-polyfill": "^1.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -80,12 +81,11 @@
     ]
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "^6.4.9",
     "@storybook/node-logger": "^6.4.9",
-    "@storybook/addon-info": "^5.3.21",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.4.9",
     "@testing-library/jest-dom": "^5.11.4",
@@ -98,6 +98,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-transition-group": "^4.4.1",
     "@types/storybook__addon-info": "^5.2.3",
+    "cross-env": "^7.0.3",
     "node-sass": "^6.0.0",
     "prettier-eslint": "^13.0.0",
     "prettier-eslint-cli": "^5.0.1",
@@ -107,7 +108,8 @@
     "react-scripts": "4.0.2",
     "sass": "^1.32.8",
     "typescript": "^4.4.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "webpack": "4.41.6"
   },
   "peerDependencies": {
     "react": ">= 16.8.0",
