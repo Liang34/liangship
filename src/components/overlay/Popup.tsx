@@ -1,4 +1,4 @@
-import { ReactElement, useCallback, useRef, cloneElement, useState } from 'react';
+import React, { ReactElement, useCallback, useRef, cloneElement, useState } from 'react';
 import Overlay, { OverlayProps } from './Overlay';
 import { PlacementType } from './placement';
 

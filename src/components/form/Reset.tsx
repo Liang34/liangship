@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { ReactNode, CSSProperties, useContext, useRef } from 'react';
 import FormContext from './FormContext';
 

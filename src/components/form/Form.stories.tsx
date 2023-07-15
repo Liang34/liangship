@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Form from './index';
 import Input from '../Input';
 import Button from '../Button';
-import Checkbox from '../checkbox';
+import Checkbox from '../Checkbox';
 
 const { Item, Reset } = Form;
 
