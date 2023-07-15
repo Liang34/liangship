@@ -58,9 +58,9 @@ const Item = (props: itemProps) => {
   }, [values, values?.[name]])
 
   const cls = classNames({
-    'ant-form-item': true,
-    [`ant-form-horizontal`]: true,
-    'ant-form-item-with-help ant-form-item-has-error': error,
+    'bobo-form-item': true,
+    [`bobo-form-horizontal`]: true,
+    'bobo-form-item-with-help bobo-form-item-has-error': error,
     [className as string]: !!className
   });
 
@@ -130,24 +130,24 @@ const Item = (props: itemProps) => {
 
   return (
     <div className={cls}>
-      <div className="ant-row ant-form-item-row">
-        <div className={`ant-col ant-col-${labelSpan} ant-form-item-label`}>
+      <div className="bobo-row bobo-form-item-row">
+        <div className={`bobo-col bobo-col-${labelSpan} bobo-form-item-label`}>
           {
             label && (
-              <label className="ant-form-item-required" >{label}</label>
+              <label className="bobo-form-item-required" >{label}</label>
             )
           }
         </div>
 
-        <div className={`ant-col ant-col-${wrapperSpan} ant-form-item-control`}>
-          <div className="ant-form-item-control-input">
-            <div className="ant-form-item-control-input-content">
+        <div className={`bobo-col bobo-col-${wrapperSpan} bobo-form-item-control`}>
+          <div className="bobo-form-item-control-input">
+            <div className="bobo-form-item-control-input-content">
               {childEle}
             </div>
           </div>
           {error && (<div style={{ display: 'flex', flexWrap: 'nowrap' }}>
-            <div className="ant-form-item-explain ant-form-item-explain-connected">
-              <div role="alert" className="ant-form-item-explain-error">{error}</div>
+            <div className="bobo-form-item-explain bobo-form-item-explain-connected">
+              <div role="alert" className="bobo-form-item-explain-error">{error}</div>
             </div>
             <div style={{ width: 0, height: 24 }}></div>
           </div>)

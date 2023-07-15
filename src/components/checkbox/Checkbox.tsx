@@ -41,7 +41,7 @@ export interface CheckboxChangeEvent {
 }
 
 const Checkbox = (props: CheckboxProps) => {
-  const { prefixCls = 'ant-', onChange, disabled, value, ...others } = props;
+  const { prefixCls = 'bobo-', onChange, disabled, value, ...others } = props;
 
   const [checked, setCheck] = useState(props.defaultChecked || false);
   const inputEl = useRef(null);
@@ -99,7 +99,7 @@ const Checkbox = (props: CheckboxProps) => {
     <span className={wrapperCls} onClick={handleClick}>
       <span className={cls} >
         <input type="checkbox" ref={inputEl} value={value} checked={checked} onChange={handleChange} />
-        <span className="ant-checkbox-inner"></span>
+        <span className="bobo-checkbox-inner"></span>
       </span>
       <span>{props.children}</span>
     </span>

@@ -2,261 +2,261 @@
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
-.ant-form-item .ant-upload {
+.bobo-form-item .bobo-upload {
   background: transparent;
 }
-.ant-form-item .ant-upload.ant-upload-drag {
+.bobo-form-item .bobo-upload.bobo-upload-drag {
   background: #fafafa;
 }
-.ant-form-item input[type='radio'],
-.ant-form-item input[type='checkbox'] {
+.bobo-form-item input[type='radio'],
+.bobo-form-item input[type='checkbox'] {
   width: 14px;
   height: 14px;
 }
-.ant-form-item .ant-radio-inline,
-.ant-form-item .ant-checkbox-inline {
+.bobo-form-item .bobo-radio-inline,
+.bobo-form-item .bobo-checkbox-inline {
   display: inline-block;
   margin-left: 8px;
   font-weight: normal;
   vertical-align: middle;
   cursor: pointer;
 }
-.ant-form-item .ant-radio-inline:first-child,
-.ant-form-item .ant-checkbox-inline:first-child {
+.bobo-form-item .bobo-radio-inline:first-child,
+.bobo-form-item .bobo-checkbox-inline:first-child {
   margin-left: 0;
 }
-.ant-form-item .ant-checkbox-vertical,
-.ant-form-item .ant-radio-vertical {
+.bobo-form-item .bobo-checkbox-vertical,
+.bobo-form-item .bobo-radio-vertical {
   display: block;
 }
-.ant-form-item .ant-checkbox-vertical + .ant-checkbox-vertical,
-.ant-form-item .ant-radio-vertical + .ant-radio-vertical {
+.bobo-form-item .bobo-checkbox-vertical + .bobo-checkbox-vertical,
+.bobo-form-item .bobo-radio-vertical + .bobo-radio-vertical {
   margin-left: 0;
 }
-.ant-form-item .ant-input-number + .ant-form-text {
+.bobo-form-item .bobo-input-number + .bobo-form-text {
   margin-left: 8px;
 }
-.ant-form-item .ant-input-number-handler-wrap {
+.bobo-form-item .bobo-input-number-handler-wrap {
   z-index: 2;
 }
-.ant-form-item .ant-select,
-.ant-form-item .ant-cascader-picker {
+.bobo-form-item .bobo-select,
+.bobo-form-item .bobo-cascader-picker {
   width: 100%;
 }
-.ant-form-item .ant-picker-calendar-year-select,
-.ant-form-item .ant-picker-calendar-month-select,
-.ant-form-item .ant-input-group .ant-select,
-.ant-form-item .ant-input-group .ant-cascader-picker,
-.ant-form-item .ant-input-number-group .ant-select,
-.ant-form-item .ant-input-number-group .ant-cascader-picker {
+.bobo-form-item .bobo-picker-calendar-year-select,
+.bobo-form-item .bobo-picker-calendar-month-select,
+.bobo-form-item .bobo-input-group .bobo-select,
+.bobo-form-item .bobo-input-group .bobo-cascader-picker,
+.bobo-form-item .bobo-input-number-group .bobo-select,
+.bobo-form-item .bobo-input-number-group .bobo-cascader-picker {
   width: auto;
 }
-.ant-form-inline {
+.bobo-form-inline {
   display: flex;
   flex-wrap: wrap;
 }
-.ant-form-inline .ant-form-item {
+.bobo-form-inline .bobo-form-item {
   flex: none;
   flex-wrap: nowrap;
   margin-right: 16px;
   margin-bottom: 0;
 }
-.ant-form-inline .ant-form-item-with-help {
+.bobo-form-inline .bobo-form-item-with-help {
   margin-bottom: 24px;
 }
-.ant-form-inline .ant-form-item > .ant-form-item-label,
-.ant-form-inline .ant-form-item > .ant-form-item-control {
+.bobo-form-inline .bobo-form-item > .bobo-form-item-label,
+.bobo-form-inline .bobo-form-item > .bobo-form-item-control {
   display: inline-block;
   vertical-align: top;
 }
-.ant-form-inline .ant-form-item > .ant-form-item-label {
+.bobo-form-inline .bobo-form-item > .bobo-form-item-label {
   flex: none;
 }
-.ant-form-inline .ant-form-item .ant-form-text {
+.bobo-form-inline .bobo-form-item .bobo-form-text {
   display: inline-block;
 }
-.ant-form-inline .ant-form-item .ant-form-item-has-feedback {
+.bobo-form-inline .bobo-form-item .bobo-form-item-has-feedback {
   display: inline-block;
 }
-.ant-form-horizontal .ant-form-item-label {
+.bobo-form-horizontal .bobo-form-item-label {
   flex-grow: 0;
 }
-.ant-form-horizontal .ant-form-item-control {
+.bobo-form-horizontal .bobo-form-item-control {
   flex: 1 1 0;
   min-width: 0;
 }
-.ant-form-horizontal .ant-form-item-label.ant-col-24 + .ant-form-item-control {
+.bobo-form-horizontal .bobo-form-item-label.bobo-col-24 + .bobo-form-item-control {
   min-width: unset;
 }
-.ant-form-vertical .ant-form-item {
+.bobo-form-vertical .bobo-form-item {
   flex-direction: column;
 }
-.ant-form-vertical .ant-form-item-label > label {
+.bobo-form-vertical .bobo-form-item-label > label {
   height: auto;
 }
-.ant-form-vertical .ant-form-item-label,
-.ant-col-24.ant-form-item-label,
-.ant-col-xl-24.ant-form-item-label {
+.bobo-form-vertical .bobo-form-item-label,
+.bobo-col-24.bobo-form-item-label,
+.bobo-col-xl-24.bobo-form-item-label {
   padding: 0 0 8px;
   line-height: 1.5715;
   white-space: initial;
   text-align: left;
 }
-.ant-form-vertical .ant-form-item-label > label,
-.ant-col-24.ant-form-item-label > label,
-.ant-col-xl-24.ant-form-item-label > label {
+.bobo-form-vertical .bobo-form-item-label > label,
+.bobo-col-24.bobo-form-item-label > label,
+.bobo-col-xl-24.bobo-form-item-label > label {
   margin: 0;
 }
-.ant-form-vertical .ant-form-item-label > label::after,
-.ant-col-24.ant-form-item-label > label::after,
-.ant-col-xl-24.ant-form-item-label > label::after {
+.bobo-form-vertical .bobo-form-item-label > label::after,
+.bobo-col-24.bobo-form-item-label > label::after,
+.bobo-col-xl-24.bobo-form-item-label > label::after {
   display: none;
 }
-.ant-form-rtl.ant-form-vertical .ant-form-item-label,
-.ant-form-rtl.ant-col-24.ant-form-item-label,
-.ant-form-rtl.ant-col-xl-24.ant-form-item-label {
+.bobo-form-rtl.bobo-form-vertical .bobo-form-item-label,
+.bobo-form-rtl.bobo-col-24.bobo-form-item-label,
+.bobo-form-rtl.bobo-col-xl-24.bobo-form-item-label {
   text-align: right;
 }
 @media (max-width: 575px) {
-  .ant-form-item .ant-form-item-label {
+  .bobo-form-item .bobo-form-item-label {
     padding: 0 0 8px;
     line-height: 1.5715;
     white-space: initial;
     text-align: left;
   }
-  .ant-form-item .ant-form-item-label > label {
+  .bobo-form-item .bobo-form-item-label > label {
     margin: 0;
   }
-  .ant-form-item .ant-form-item-label > label::after {
+  .bobo-form-item .bobo-form-item-label > label::after {
     display: none;
   }
-  .ant-form-rtl.ant-form-item .ant-form-item-label {
+  .bobo-form-rtl.bobo-form-item .bobo-form-item-label {
     text-align: right;
   }
-  .ant-form .ant-form-item {
+  .bobo-form .bobo-form-item {
     flex-wrap: wrap;
   }
-  .ant-form .ant-form-item .ant-form-item-label,
-  .ant-form .ant-form-item .ant-form-item-control {
+  .bobo-form .bobo-form-item .bobo-form-item-label,
+  .bobo-form .bobo-form-item .bobo-form-item-control {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .ant-col-xs-24.ant-form-item-label {
+  .bobo-col-xs-24.bobo-form-item-label {
     padding: 0 0 8px;
     line-height: 1.5715;
     white-space: initial;
     text-align: left;
   }
-  .ant-col-xs-24.ant-form-item-label > label {
+  .bobo-col-xs-24.bobo-form-item-label > label {
     margin: 0;
   }
-  .ant-col-xs-24.ant-form-item-label > label::after {
+  .bobo-col-xs-24.bobo-form-item-label > label::after {
     display: none;
   }
-  .ant-form-rtl.ant-col-xs-24.ant-form-item-label {
+  .bobo-form-rtl.bobo-col-xs-24.bobo-form-item-label {
     text-align: right;
   }
 }
 @media (max-width: 767px) {
-  .ant-col-sm-24.ant-form-item-label {
+  .bobo-col-sm-24.bobo-form-item-label {
     padding: 0 0 8px;
     line-height: 1.5715;
     white-space: initial;
     text-align: left;
   }
-  .ant-col-sm-24.ant-form-item-label > label {
+  .bobo-col-sm-24.bobo-form-item-label > label {
     margin: 0;
   }
-  .ant-col-sm-24.ant-form-item-label > label::after {
+  .bobo-col-sm-24.bobo-form-item-label > label::after {
     display: none;
   }
-  .ant-form-rtl.ant-col-sm-24.ant-form-item-label {
+  .bobo-form-rtl.bobo-col-sm-24.bobo-form-item-label {
     text-align: right;
   }
 }
 @media (max-width: 991px) {
-  .ant-col-md-24.ant-form-item-label {
+  .bobo-col-md-24.bobo-form-item-label {
     padding: 0 0 8px;
     line-height: 1.5715;
     white-space: initial;
     text-align: left;
   }
-  .ant-col-md-24.ant-form-item-label > label {
+  .bobo-col-md-24.bobo-form-item-label > label {
     margin: 0;
   }
-  .ant-col-md-24.ant-form-item-label > label::after {
+  .bobo-col-md-24.bobo-form-item-label > label::after {
     display: none;
   }
-  .ant-form-rtl.ant-col-md-24.ant-form-item-label {
+  .bobo-form-rtl.bobo-col-md-24.bobo-form-item-label {
     text-align: right;
   }
 }
 @media (max-width: 1199px) {
-  .ant-col-lg-24.ant-form-item-label {
+  .bobo-col-lg-24.bobo-form-item-label {
     padding: 0 0 8px;
     line-height: 1.5715;
     white-space: initial;
     text-align: left;
   }
-  .ant-col-lg-24.ant-form-item-label > label {
+  .bobo-col-lg-24.bobo-form-item-label > label {
     margin: 0;
   }
-  .ant-col-lg-24.ant-form-item-label > label::after {
+  .bobo-col-lg-24.bobo-form-item-label > label::after {
     display: none;
   }
-  .ant-form-rtl.ant-col-lg-24.ant-form-item-label {
+  .bobo-form-rtl.bobo-col-lg-24.bobo-form-item-label {
     text-align: right;
   }
 }
 @media (max-width: 1599px) {
-  .ant-col-xl-24.ant-form-item-label {
+  .bobo-col-xl-24.bobo-form-item-label {
     padding: 0 0 8px;
     line-height: 1.5715;
     white-space: initial;
     text-align: left;
   }
-  .ant-col-xl-24.ant-form-item-label > label {
+  .bobo-col-xl-24.bobo-form-item-label > label {
     margin: 0;
   }
-  .ant-col-xl-24.ant-form-item-label > label::after {
+  .bobo-col-xl-24.bobo-form-item-label > label::after {
     display: none;
   }
-  .ant-form-rtl.ant-col-xl-24.ant-form-item-label {
+  .bobo-form-rtl.bobo-col-xl-24.bobo-form-item-label {
     text-align: right;
   }
 }
-.ant-form-item {
+.bobo-form-item {
   /* Some non-status related component style is in `components.less` */
   /* To support leave along ErrorList. We add additional className to handle explain style */
 }
-.ant-form-item-explain-error {
+.bobo-form-item-explain-error {
   color: #ff4d4f;
 }
-.ant-form-item-explain-warning {
+.bobo-form-item-explain-warning {
   color: #faad14;
 }
-.ant-form-item-has-feedback .ant-switch {
+.bobo-form-item-has-feedback .bobo-switch {
   margin: 2px 0 4px;
 }
-.ant-form-item-has-warning .ant-form-item-split {
+.bobo-form-item-has-warning .bobo-form-item-split {
   color: #faad14;
 }
-.ant-form-item-has-warning .ant-calendar-picker-open .ant-calendar-picker-input {
+.bobo-form-item-has-warning .bobo-calendar-picker-open .bobo-calendar-picker-input {
   border-color: #ffc53d;
   box-shadow: 0 0 0 2px rgba(250, 173, 20, 0.2);
   border-right-width: 1px;
   outline: 0;
 }
-.ant-form-item-has-error .ant-form-item-split {
+.bobo-form-item-has-error .bobo-form-item-split {
   color: #ff4d4f;
 }
-.ant-form-item-has-error .ant-calendar-picker-open .ant-calendar-picker-input {
+.bobo-form-item-has-error .bobo-calendar-picker-open .bobo-calendar-picker-input {
   border-color: #ff7875;
   box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
   border-right-width: 1px;
   outline: 0;
 }
-.ant-form {
+.bobo-form {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -267,7 +267,7 @@
   list-style: none;
   font-feature-settings: 'tnum';
 }
-.ant-form legend {
+.bobo-form legend {
   display: block;
   width: 100%;
   margin-bottom: 20px;
@@ -278,58 +278,58 @@
   border: 0;
   border-bottom: 1px solid #d9d9d9;
 }
-.ant-form label {
+.bobo-form label {
   font-size: 14px;
 }
-.ant-form input[type='search'] {
+.bobo-form input[type='search'] {
   box-sizing: border-box;
 }
-.ant-form input[type='radio'],
-.ant-form input[type='checkbox'] {
+.bobo-form input[type='radio'],
+.bobo-form input[type='checkbox'] {
   line-height: normal;
 }
-.ant-form input[type='file'] {
+.bobo-form input[type='file'] {
   display: block;
 }
-.ant-form input[type='range'] {
+.bobo-form input[type='range'] {
   display: block;
   width: 100%;
 }
-.ant-form select[multiple],
-.ant-form select[size] {
+.bobo-form select[multiple],
+.bobo-form select[size] {
   height: auto;
 }
-.ant-form input[type='file']:focus,
-.ant-form input[type='radio']:focus,
-.ant-form input[type='checkbox']:focus {
+.bobo-form input[type='file']:focus,
+.bobo-form input[type='radio']:focus,
+.bobo-form input[type='checkbox']:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.ant-form output {
+.bobo-form output {
   display: block;
   padding-top: 15px;
   color: rgba(0, 0, 0, 0.85);
   font-size: 14px;
   line-height: 1.5715;
 }
-.ant-form .ant-form-text {
+.bobo-form .bobo-form-text {
   display: inline-block;
   padding-right: 8px;
 }
-.ant-form-small .ant-form-item-label > label {
+.bobo-form-small .bobo-form-item-label > label {
   height: 24px;
 }
-.ant-form-small .ant-form-item-control-input {
+.bobo-form-small .bobo-form-item-control-input {
   min-height: 24px;
 }
-.ant-form-large .ant-form-item-label > label {
+.bobo-form-large .bobo-form-item-label > label {
   height: 40px;
 }
-.ant-form-large .ant-form-item-control-input {
+.bobo-form-large .bobo-form-item-control-input {
   min-height: 40px;
 }
-.ant-form-item {
+.bobo-form-item {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -343,15 +343,15 @@
   vertical-align: top;
   transition: margin-bottom 0.3s 0.017s linear;
 }
-.ant-form-item-with-help {
+.bobo-form-item-with-help {
   margin-bottom: 0;
   transition: none;
 }
-.ant-form-item-hidden,
-.ant-form-item-hidden.ant-row {
+.bobo-form-item-hidden,
+.bobo-form-item-hidden.bobo-row {
   display: none;
 }
-.ant-form-item-label {
+.bobo-form-item-label {
   display: inline-block;
   flex-grow: 0;
   overflow: hidden;
@@ -359,15 +359,15 @@
   text-align: right;
   vertical-align: middle;
 }
-.ant-form-item-label-left {
+.bobo-form-item-label-left {
   text-align: left;
 }
-.ant-form-item-label-wrap {
+.bobo-form-item-label-wrap {
   overflow: unset;
   line-height: 1.3215em;
   white-space: unset;
 }
-.ant-form-item-label > label {
+.bobo-form-item-label > label {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -376,11 +376,11 @@
   color: rgba(0, 0, 0, 0.85);
   font-size: 14px;
 }
-.ant-form-item-label > label > .anticon {
+.bobo-form-item-label > label > .anticon {
   font-size: 14px;
   vertical-align: top;
 }
-.ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+.bobo-form-item-label > label.bobo-form-item-required:not(.bobo-form-item-required-mark-optional)::before {
   display: inline-block;
   margin-right: 4px;
   color: #ff4d4f;
@@ -389,18 +389,18 @@
   line-height: 1;
   content: '*';
 }
-.ant-form-hide-required-mark .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+.bobo-form-hide-required-mark .bobo-form-item-label > label.bobo-form-item-required:not(.bobo-form-item-required-mark-optional)::before {
   display: none;
 }
-.ant-form-item-label > label .ant-form-item-optional {
+.bobo-form-item-label > label .bobo-form-item-optional {
   display: inline-block;
   margin-left: 4px;
   color: rgba(0, 0, 0, 0.45);
 }
-.ant-form-hide-required-mark .ant-form-item-label > label .ant-form-item-optional {
+.bobo-form-hide-required-mark .bobo-form-item-label > label .bobo-form-item-optional {
   display: none;
 }
-.ant-form-item-label > label .ant-form-item-tooltip {
+.bobo-form-item-label > label .bobo-form-item-tooltip {
   color: rgba(0, 0, 0, 0.45);
   cursor: help;
   -ms-writing-mode: lr-tb;
@@ -408,81 +408,81 @@
   -webkit-margin-start: 4px;
           margin-inline-start: 4px;
 }
-.ant-form-item-label > label::after {
+.bobo-form-item-label > label::after {
   content: ':';
   position: relative;
   top: -0.5px;
   margin: 0 8px 0 2px;
 }
-.ant-form-item-label > label.ant-form-item-no-colon::after {
+.bobo-form-item-label > label.bobo-form-item-no-colon::after {
   content: ' ';
 }
-.ant-form-item-control {
+.bobo-form-item-control {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
-.ant-form-item-control:first-child:not([class^='ant-col-']):not([class*=' ant-col-']) {
+.bobo-form-item-control:first-child:not([class^='bobo-col-']):not([class*=' bobo-col-']) {
   width: 100%;
 }
-.ant-form-item-control-input {
+.bobo-form-item-control-input {
   position: relative;
   display: flex;
   align-items: center;
   min-height: 32px;
 }
-.ant-form-item-control-input-content {
+.bobo-form-item-control-input-content {
   flex: auto;
   max-width: 100%;
 }
-.ant-form-item-explain,
-.ant-form-item-extra {
+.bobo-form-item-explain,
+.bobo-form-item-extra {
   clear: both;
   color: rgba(0, 0, 0, 0.45);
   font-size: 14px;
   line-height: 1.5715;
   transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.ant-form-item-explain-connected {
+.bobo-form-item-explain-connected {
   height: 0;
   min-height: 0;
   opacity: 0;
 }
-.ant-form-item-extra {
+.bobo-form-item-extra {
   min-height: 24px;
 }
-.ant-form-item .ant-input-textarea-show-count::after {
+.bobo-form-item .bobo-input-textarea-show-count::after {
   margin-bottom: -22px;
 }
-.ant-form-item-with-help .ant-form-item-explain {
+.bobo-form-item-with-help .bobo-form-item-explain {
   height: auto;
   min-height: 24px;
   opacity: 1;
 }
-.ant-show-help {
+.bobo-show-help {
   transition: height 0.3s linear, min-height 0.3s linear, margin-bottom 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.ant-show-help-leave {
+.bobo-show-help-leave {
   min-height: 24px;
 }
-.ant-show-help-leave-active {
+.bobo-show-help-leave-active {
   min-height: 0;
 }
-.ant-show-help-item {
+.bobo-show-help-item {
   overflow: hidden;
   transition: height 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
 }
-.ant-show-help-item-appear,
-.ant-show-help-item-enter {
+.bobo-show-help-item-appear,
+.bobo-show-help-item-enter {
   transform: translateY(-5px);
   opacity: 0;
 }
-.ant-show-help-item-appear-active,
-.ant-show-help-item-enter-active {
+.bobo-show-help-item-appear-active,
+.bobo-show-help-item-enter-active {
   transform: translateY(0);
   opacity: 1;
 }
-.ant-show-help-item-leave-active {
+.bobo-show-help-item-leave-active {
   transform: translateY(-5px);
 }
 @-webkit-keyframes diffZoomIn1 {
@@ -545,90 +545,90 @@
     opacity: 1;
   }
 }
-.ant-form-rtl {
+.bobo-form-rtl {
   direction: rtl;
 }
-.ant-form-rtl .ant-form-item-label {
+.bobo-form-rtl .bobo-form-item-label {
   text-align: left;
 }
-.ant-form-rtl .ant-form-item-label > label.ant-form-item-required::before {
+.bobo-form-rtl .bobo-form-item-label > label.bobo-form-item-required::before {
   margin-right: 0;
   margin-left: 4px;
 }
-.ant-form-rtl .ant-form-item-label > label::after {
+.bobo-form-rtl .bobo-form-item-label > label::after {
   margin: 0 2px 0 8px;
 }
-.ant-form-rtl .ant-form-item-label > label .ant-form-item-optional {
+.bobo-form-rtl .bobo-form-item-label > label .bobo-form-item-optional {
   margin-right: 4px;
   margin-left: 0;
 }
-.ant-col-rtl .ant-form-item-control:first-child {
+.bobo-col-rtl .bobo-form-item-control:first-child {
   width: 100%;
 }
-.ant-form-rtl .ant-form-item-has-feedback .ant-input {
+.bobo-form-rtl .bobo-form-item-has-feedback .bobo-input {
   padding-right: 11px;
   padding-left: 24px;
 }
-.ant-form-rtl .ant-form-item-has-feedback .ant-input-affix-wrapper .ant-input-suffix {
+.bobo-form-rtl .bobo-form-item-has-feedback .bobo-input-affix-wrapper .bobo-input-suffix {
   padding-right: 11px;
   padding-left: 18px;
 }
-.ant-form-rtl .ant-form-item-has-feedback .ant-input-affix-wrapper .ant-input {
+.bobo-form-rtl .bobo-form-item-has-feedback .bobo-input-affix-wrapper .bobo-input {
   padding: 0;
 }
-.ant-form-rtl .ant-form-item-has-feedback .ant-input-number-affix-wrapper .ant-input-number {
+.bobo-form-rtl .bobo-form-item-has-feedback .bobo-input-number-affix-wrapper .bobo-input-number {
   padding: 0;
 }
-.ant-form-rtl .ant-form-item-has-feedback .ant-input-search:not(.ant-input-search-enter-button) .ant-input-suffix {
+.bobo-form-rtl .bobo-form-item-has-feedback .bobo-input-search:not(.bobo-input-search-enter-button) .bobo-input-suffix {
   right: auto;
   left: 28px;
 }
-.ant-form-rtl .ant-form-item-has-feedback .ant-input-number {
+.bobo-form-rtl .bobo-form-item-has-feedback .bobo-input-number {
   padding-left: 18px;
 }
-.ant-form-rtl .ant-form-item-has-feedback > .ant-select .ant-select-arrow,
-.ant-form-rtl .ant-form-item-has-feedback > .ant-select .ant-select-clear,
-.ant-form-rtl .ant-form-item-has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-arrow,
-.ant-form-rtl .ant-form-item-has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-clear,
-.ant-form-rtl .ant-form-item-has-feedback :not(.ant-input-number-group-addon) > .ant-select .ant-select-arrow,
-.ant-form-rtl .ant-form-item-has-feedback :not(.ant-input-number-group-addon) > .ant-select .ant-select-clear {
+.bobo-form-rtl .bobo-form-item-has-feedback > .bobo-select .bobo-select-arrow,
+.bobo-form-rtl .bobo-form-item-has-feedback > .bobo-select .bobo-select-clear,
+.bobo-form-rtl .bobo-form-item-has-feedback :not(.bobo-input-group-addon) > .bobo-select .bobo-select-arrow,
+.bobo-form-rtl .bobo-form-item-has-feedback :not(.bobo-input-group-addon) > .bobo-select .bobo-select-clear,
+.bobo-form-rtl .bobo-form-item-has-feedback :not(.bobo-input-number-group-addon) > .bobo-select .bobo-select-arrow,
+.bobo-form-rtl .bobo-form-item-has-feedback :not(.bobo-input-number-group-addon) > .bobo-select .bobo-select-clear {
   right: auto;
   left: 32px;
 }
-.ant-form-rtl .ant-form-item-has-feedback > .ant-select .ant-select-selection-selected-value,
-.ant-form-rtl .ant-form-item-has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-selection-selected-value,
-.ant-form-rtl .ant-form-item-has-feedback :not(.ant-input-number-group-addon) > .ant-select .ant-select-selection-selected-value {
+.bobo-form-rtl .bobo-form-item-has-feedback > .bobo-select .bobo-select-selection-selected-value,
+.bobo-form-rtl .bobo-form-item-has-feedback :not(.bobo-input-group-addon) > .bobo-select .bobo-select-selection-selected-value,
+.bobo-form-rtl .bobo-form-item-has-feedback :not(.bobo-input-number-group-addon) > .bobo-select .bobo-select-selection-selected-value {
   padding-right: 0;
   padding-left: 42px;
 }
-.ant-form-rtl .ant-form-item-has-feedback .ant-cascader-picker-arrow {
+.bobo-form-rtl .bobo-form-item-has-feedback .bobo-cascader-picker-arrow {
   margin-right: 0;
   margin-left: 19px;
 }
-.ant-form-rtl .ant-form-item-has-feedback .ant-cascader-picker-clear {
+.bobo-form-rtl .bobo-form-item-has-feedback .bobo-cascader-picker-clear {
   right: auto;
   left: 32px;
 }
-.ant-form-rtl .ant-form-item-has-feedback .ant-picker {
+.bobo-form-rtl .bobo-form-item-has-feedback .bobo-picker {
   padding-right: 11px;
   padding-left: 29.2px;
 }
-.ant-form-rtl .ant-form-item-has-feedback .ant-picker-large {
+.bobo-form-rtl .bobo-form-item-has-feedback .bobo-picker-large {
   padding-right: 11px;
   padding-left: 29.2px;
 }
-.ant-form-rtl .ant-form-item-has-feedback .ant-picker-small {
+.bobo-form-rtl .bobo-form-item-has-feedback .bobo-picker-small {
   padding-right: 7px;
   padding-left: 25.2px;
 }
-.ant-form-rtl .ant-form-item-has-feedback.ant-form-item-has-success .ant-form-item-children-icon,
-.ant-form-rtl .ant-form-item-has-feedback.ant-form-item-has-warning .ant-form-item-children-icon,
-.ant-form-rtl .ant-form-item-has-feedback.ant-form-item-has-error .ant-form-item-children-icon,
-.ant-form-rtl .ant-form-item-has-feedback.ant-form-item-is-validating .ant-form-item-children-icon {
+.bobo-form-rtl .bobo-form-item-has-feedback.bobo-form-item-has-success .bobo-form-item-children-icon,
+.bobo-form-rtl .bobo-form-item-has-feedback.bobo-form-item-has-warning .bobo-form-item-children-icon,
+.bobo-form-rtl .bobo-form-item-has-feedback.bobo-form-item-has-error .bobo-form-item-children-icon,
+.bobo-form-rtl .bobo-form-item-has-feedback.bobo-form-item-is-validating .bobo-form-item-children-icon {
   right: auto;
   left: 0;
 }
-.ant-form-rtl.ant-form-inline .ant-form-item {
+.bobo-form-rtl.bobo-form-inline .bobo-form-item {
   margin-right: 0;
   margin-left: 16px;
 }

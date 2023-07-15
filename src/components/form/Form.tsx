@@ -30,8 +30,8 @@ const Form = (props: formProps) => {
   const errors = useRef({});
 
   const cls = classNames({
-    'ant-form': true,
-    [`ant-form-horizontal`]: true,
+    'bobo-form': true,
+    [`bobo-form-horizontal`]: true,
     [className as string]: !!className
   });
   const onValueChange = (key, value) => {
